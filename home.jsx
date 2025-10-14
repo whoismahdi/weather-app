@@ -1,5 +1,18 @@
 import { useEffect, useState} from "react"
 import CitySearchDropdown from "./components/Searchbar";
+import './assets/images/logo.svg';
+import './assets/images/icon-sunny.webp';
+import './assets/images/icon-partly-cloudy.webp';
+import './assets/images/icon-overcast.webp';
+import './assets/images/icon-fog.webp';
+import './assets/images/icon-drizzle.webp';
+import './assets/images/icon-rain.webp';
+import './assets/images/icon-snow.webp';
+import './assets/images/icon-storm.webp';
+import './assets/images/icon-units.svg';
+import './assets/images/icon-dropdown.svg';
+import './assets/images/icon-checkmark.svg';
+import './assets/images/icon-loading.svg';
 
 
 
