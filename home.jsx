@@ -150,10 +150,10 @@ function Home() {
     </div>
     <div className=" relative inline-block ">
     <div onClick={()=>{setSettingStatus(!settingStatus)}} className="relative px-4 py-3 bg-neutral-800 rounded-lg flex justify-center items-center gap-2.5">
-      <img src="/assets/images/icon-units.svg" className="text-center justify-start text-neutral-50 text-base font-normal " />
+      <img src="/assets/images/icon-units.svg" className="text-center justify-start text-neutral-50 text-base font-normal" alt="..." />
       <div className="text-center justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')] cursor-default leading-tight">
         Units </div>
-      <img src="/assets/images/icon-dropdown.svg" className="justify-start text-neutral-50 lg:text-lg md:text-md text-sm"/>
+      <img src="/assets/images/icon-dropdown.svg" alt="..." className="justify-start text-neutral-50 lg:text-lg md:text-md text-sm"/>
     </div>
       
         {settingStatus && 
@@ -168,11 +168,11 @@ function Home() {
             <div className="self-stretch flex flex-col justify-start items-start gap-1">
               <div onClick={()=>{setUnits(prev=>({...prev,fahrenheit:false}))}} data-status="Active" className={`w-48 px-2 py-2.5 ${units.fahrenheit == false ? "bg-neutral-700 " : "bg-neutral-800"} cursor-pointer rounded-lg inline-flex justify-start items-center gap-2.5`}>
                 <div className="flex-1 justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')] leading-tight">Celsius (°C)</div>
-                {!units.fahrenheit && <img src="/assets/images/icon-checkmark.svg" className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
+                {!units.fahrenheit && <img src="/assets/images/icon-checkmark.svg" alt="..." className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
               </div>
               <div onClick={()=>{setUnits(prev=>({...prev,fahrenheit:true}))}} data-status="Default" className={`w-48 px-2 py-2.5 rounded-lg inline-flex justify-start items-center gap-2.5 cursor-pointer ${units.fahrenheit == true ? "bg-neutral-700 " : "bg-neutral-800"}`}>
                 <div className="flex-1 justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')] leading-tight">Fahrenheit (°F)</div>
-                {units.fahrenheit && <img src="/assets/images/icon-checkmark.svg" className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
+                {units.fahrenheit && <img src="/assets/images/icon-checkmark.svg" alt="..." className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
               </div>
             </div>
           </div>
@@ -184,11 +184,11 @@ function Home() {
             <div className="self-stretch flex flex-col justify-start items-start gap-1">
               <div onClick={()=>{setUnits(prev=>({...prev,speed:true}))}} className={`w-48 px-2 py-2.5 ${units.speed == true ? "bg-neutral-700 " : "bg-neutral-800"} cursor-pointer rounded-lg inline-flex justify-start items-center gap-2.5`}>
                 <div className="flex-1 justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')]  leading-tight">km/h</div>
-                {units.speed && <img src="/assets/images/icon-checkmark.svg" className="justify-start text-white text-sm font-normal" />}
+                {units.speed && <img src="/assets/images/icon-checkmark.svg" alt="..." className="justify-start text-white text-sm font-normal" />}
                 </div>
               <div onClick={()=>{setUnits(prev=>({...prev,speed:false}))}} data-status="Default" className={`w-48 px-2 py-2.5 rounded-lg ${units.speed == false ? "bg-neutral-700 " : "bg-neutral-800"} cursor-pointer inline-flex justify-start items-center gap-2.5`}>
                 <div className="flex-1 justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')] leading-tight">mph</div>
-                {!units.speed && <img src="/assets/images/icon-checkmark.svg" className="justify-start text-white text-sm font-normal" />}
+                {!units.speed && <img src="/assets/images/icon-checkmark.svg" alt="..." className="justify-start text-white text-sm font-normal" />}
 
               </div>
             </div>
@@ -201,11 +201,11 @@ function Home() {
             <div className="self-stretch flex flex-col justify-start items-start gap-1">
               <div onClick={()=>{setUnits(prev=>({...prev,prec:true}))}} className={`${units.prec == true ? "bg-neutral-700 " : "bg-neutral-800"} w-48 px-2 py-2.5 bg-neutral-700 cursor-pointer rounded-lg inline-flex justify-start items-center gap-2.5`}>
                 <div  className=" flex-1 justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')] leading-tight">Millimeters (mm)</div>
-                {units.prec && <img src="/assets/images/icon-checkmark.svg" className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
+                {units.prec && <img src="/assets/images/icon-checkmark.svg" alt="..." className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
                 </div>
               <div onClick={()=>{setUnits(prev=>({...prev,prec:false}))}} className={`w-48 px-2 py-2.5 rounded-lg inline-flex cursor-pointer justify-start items-center ${units.prec == false ? "bg-neutral-700 " : "bg-neutral-800"} gap-2.5`}>
                 <div className="flex-1 justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')] leading-tight">Inches (in)</div>
-                {!units.prec && <img src="/assets/images/icon-checkmark.svg" className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
+                {!units.prec && <img src="/assets/images/icon-checkmark.svg" alt="..." className="justify-start text-white text-sm font-normal font-['Font_Awesome_5_Pro'] leading-none" />}
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@ function Home() {
 
           <div className="flex  justify-end items-center gap-5">
             <div className="w-25 h-25 relative">
-              <img className="w-25 h-25 left-0 top-0 absolute" src="/assets/images/icon-sunny.webp" />
+              <img className="w-25 h-25 left-0 top-0 absolute" alt="..." src="/assets/images/icon-sunny.webp" />
             </div>
             <div  className="text-center justify-start text-neutral-50 md:text-8xl text-6xl font-semibold font-[url('DM_Sans')] leading-[96px]">
               {units.fahrenheit ? (weatherData.temperature * 9/5 +32).toFixed(1) : weatherData.temperature}° </div>
@@ -292,7 +292,7 @@ function Home() {
             <>
             <div className="text-center justify-start text-neutral-50 text-lg font-small font-['DM_Sans'] leading-snug">{daysOfWeek[day.day.getDay()]}</div>
             <div className="w-14 h-14 relative">
-              <img className="w-14 h-14 left-0 top-0 absolute" src={`/assets/images/${day.icon}`} />
+              <img className="w-14 h-14 left-0 top-0 absolute" alt="..." src={`/assets/images/${day.icon}`} />
             </div>
             <div className="self-stretch inline-flex justify-between items-center">
               <div className="text-center text-sm justify-start text-neutral-50 text-base font-medium font-['DM_Sans'] leading-tight">{units.fahrenheit ?( day.max * 9/5 +32).toFixed(1) : day.max}°</div>
@@ -316,7 +316,7 @@ function Home() {
         <div onClick={()=>{setDropdown(!dropdown)}} className="relative px-4 py-2 bg-neutral-600 cursor-pointer rounded-lg flex justify-center items-center gap-3">
           <div className="text-center justify-start text-neutral-50 text-base font-medium font-[url('DM_Sans')]">
             {daysOfWeek[days]}</div>
-          <img src="/assets/images/icon-dropdown.svg" className="justify-start text-neutral-50 text-lg font-normal" />
+          <img src="/assets/images/icon-dropdown.svg" alt="..." className="justify-start text-neutral-50 text-lg font-normal" />
         {dropdown &&
         <div className="w-20 p-2 right-0 top-12 absolute bg-neutral-800 rounded-xl z-[1] shadow-[0px_8px_16px_0px_rgba(2,1,44,0.32)] outline outline-1 outline-offset-[-1px] outline-neutral-600 inline-flex flex-col justify-start items-start gap-1">
           {daysOfWeek.map((day,idx)=>(
@@ -332,7 +332,7 @@ function Home() {
       {hourlyForecast.map((hour)=>(
         <div key={hour.time} className="self-stretch pl-3 pr-4 py-2.5 bg-neutral-700 rounded-lg outline outline-1 outline-offset-[-1px] outline-neutral-600 inline-flex justify-start items-center gap-2 overflow-hidden">
         <div className="w-10 h-10 relative">
-          <img className="w-10 h-10 left-0 top-0 absolute" src={`/assets/images/${hour.icon}`} />
+          <img className="w-10 h-10 left-0 top-0 absolute" alt="..." src={`/assets/images/${hour.icon}`} />
         </div>
         <div className="flex-1 justify-start text-neutral-50 text-xl font-medium font-[url('DM_Sans')] leading-normal">
           {hour.time}</div>
