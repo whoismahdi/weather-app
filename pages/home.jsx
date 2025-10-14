@@ -218,7 +218,7 @@ function Home() {
 
       <div  className="self-stretch flex flex-col  justify-start items-start gap-8">
         {loading ? <div className="md:self-stretch h-72 px-6 py-20 relative bg-neutral-800 inline-flex justify-center items-center overflow-hidden outline-1 outline-neutral-600 ">
-              <img src="./assets/images/icon-loading.svg" alt="..." />
+              <img src="./assets/images/icon-loading.svg" className="animate-spin" alt="..." />
               <div className="text-neutral-50 px-2">
                 loading
               </div>
