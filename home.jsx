@@ -1,5 +1,5 @@
-import { useEffect, useState, useSyncExternalStore } from "react"
-import CitySearchDropdown from "./components/Searchbar";
+import { useEffect, useState} from "react"
+import CitySearchDropdown from "./components/searchbar";
 
 
 
