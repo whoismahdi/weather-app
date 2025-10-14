@@ -128,7 +128,7 @@ function Home() {
         .then(data => {
           const temps = data.hourly.temperature_2m;
           const hourly = temps.slice(0,8).map((temp,idx) => ({
-            time: `${now+idx} PM`,
+            time: `${now + idx >24 ? now+idx-24  :now+idx}`,
             icon: getIcon(data.hourly.weather_code[targetDate+idx]),
             temp: temps[targetDate+idx]
           }));
