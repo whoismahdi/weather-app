@@ -3,7 +3,7 @@
 A modern and fully responsive **React + Tailwind CSS** weather app that displays **real-time weather data**, **hourly updates**, and **7-day forecasts** using the [Open-Meteo API](https://open-meteo.com/).
 
 [site Domain](https://weather-app-xm6z.vercel.app/)
----
+
 
 ## 🚀 Features
 
