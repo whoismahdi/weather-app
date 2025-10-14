@@ -1,5 +1,5 @@
 import { useEffect, useState} from "react"
-import CitySearchDropdown from "./components/searchbar";
+import CitySearchDropdown from "./components/Searchbar";
 
 
 
