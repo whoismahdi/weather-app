@@ -96,7 +96,7 @@ function Home() {
               setDailyForecast(daily);
 
               
-              const hourly = temps.slice(0, 8).map((temp, idx) => ({
+              const hourly = temps.slice(0, 23).map((temp, idx) => ({
                   time: `${now + idx >24 ? now+idx-24  :now+idx }`,
                   icon: getIcon(weatherData.hourly.weather_code[168+now+idx]),
                   temp : temps[168+now+idx]
@@ -309,7 +309,7 @@ function Home() {
     
 
     
-    <div className="md:w-96 w-full p-6 relative bg-neutral-800 rounded-[20px] inline-flex flex-col justify-start items-start gap-4 overflow-hidden">
+    <div className="md:w-96 w-full p-6 relative bg-neutral-800 rounded-[20px] inline-flex flex-col justify-start items-start gap-4">
       <div className=" w-full inline-flex justify-between items-center">
         <div className="justify-start text-neutral-50 text-xl font-semibold font-[url('DM_Sans')] leading-normal">
           Hourly forecast</div>
