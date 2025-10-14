@@ -323,12 +323,11 @@ function Home() {
             <div key={idx} onClick={()=>{fetchNewDay(idx)}} className={`w-16 ${days == idx ? "bg-neutral-700" : "bg-neutral-800"} px-2 py-2.5 rounded-lg inline-flex justify-start items-center gap-2.5`}>
               <div className="flex-1 flex justify-center items-center text-neutral-50 text-base font-medium font-['DM_Sans'] leading-tight">{day}</div>
           </div>
-          ))
-          }
-        </div>
-        }
+          ))}
+        </div>}
         </div>
       </div>
+      <div className="max-h-[512] overflow-y-auto w-full">
       {hourlyForecast.map((hour)=>(
         <div key={hour.time} className="self-stretch pl-3 pr-4 py-2.5 bg-neutral-700 rounded-lg outline outline-1 outline-offset-[-1px] outline-neutral-600 inline-flex justify-start items-center gap-2 overflow-hidden">
         <div className="w-10 h-10 relative">
@@ -342,6 +341,7 @@ function Home() {
         </div>
       </div>
       ))}
+      </div>
     </div>
   </div>
 </div>
