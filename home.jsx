@@ -327,7 +327,7 @@ function Home() {
         </div>}
         </div>
       </div>
-      <div className="max-h-[512px] overflow-y-auto overflow-x-hidden  w-full">
+      <div className="max-h-[588px] overflow-y-auto overflow-x-hidden  w-full">
       {hourlyForecast.map((hour)=>(
         <div key={hour.time} className="self-stretch pl-3 pr-4 w-[98%] m-1 py-2.5 bg-neutral-700 rounded-lg outline outline-1 outline-offset-[-1px] outline-neutral-600 inline-flex justify-start items-center gap-2 overflow-hidden">
         <div className="w-10 h-10 relative">
